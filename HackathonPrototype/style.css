@@ -423,3 +423,44 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+/* .tattoo {
+  max-width: 150px;
+}
+
+#card {
+  cursor: pointer;
+  position: fixed;
+} */
+#canvas {
+  position: relative;
+  overflow: hidden;
+}
+
+#card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-100px); /* center then move up */
+  cursor: move;
+  display: inline-block;
+}
+
+#resize-handle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 0;
+  background: none;
+  cursor: se-resize;
+  z-index: 2;
+}
+
+#card img.tattoo {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  max-width: 150px;
+}
